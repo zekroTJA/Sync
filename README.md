@@ -8,5 +8,8 @@ If everything works fine, then you can merge to `master`.
 
 ## Current contributors:
 
-- [Schlaubi](http://github.com/DRSchlaubi)
-- [zekro](http://github.com/zekrotja)
+| Contributor | Projects |
+|---|----|
+|[Schlaubi](http://github.com/DRSchlaubi) | `Core`, `MySQL`, `Permissions`, `Discord Sync` |
+|[zekro](http://github.com/zekrotja) | `Core`, `Permissions`, `Discord Sync`|
+ 
