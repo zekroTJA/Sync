@@ -13,7 +13,7 @@ public class JoinListener implements Listener{
     private static HashMap<String, String> roles = Main.roles;
 
     @EventHandler
-    public void onJoin(PlayerJoinEvent e){
+    public void onJoin(PlayerJoinEvent e) {
 
         FileConfiguration cfg = Main.getConfiguration();
         Player player = e.getPlayer();
@@ -26,7 +26,13 @@ public class JoinListener implements Listener{
         Member member = Main.jda.getGuilds().get(0).getMemberById(MySQL.getValue(player, "discordid"));
         member.getRoles().forEach(i -> {
             if(roles.containsKey(i.getId())) {
+
+                System.out.println(i.getName());
+
                 if (!perms.playerInGroup(player, roles.get(i.getId()))) {
+
+                    System.out.println("Added role " + i.getName());
+
                     perms.playerAddGroup(player, roles.get(i.getId()));
                     player.sendMessage(cfg.getString("Messages.gotrole").replace("%role%", roles.get(i.getId())).replace("&", "§"));
                 }
