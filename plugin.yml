@@ -1,0 +1,7 @@
+main: Main
+version: 1.0
+name: CorePlugin
+
+commands:
+   test:
+      description: Just for testing purposes.
