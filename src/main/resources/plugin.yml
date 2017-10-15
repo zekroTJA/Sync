@@ -1,0 +1,8 @@
+name: DiscordCraft
+author: Schlaubi
+version: 1.0
+depend: [Vault]
+main: net.schlaubi.spigot.discordcraft.Main
+commands:
+  report:
+    description: Report command
