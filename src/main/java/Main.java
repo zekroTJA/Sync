@@ -1,3 +1,4 @@
+import commands.Debug;
 import commands.Test;
 import net.dv8tion.jda.core.AccountType;
 import net.dv8tion.jda.core.JDA;
@@ -39,6 +40,9 @@ public class Main extends JavaPlugin {
         MySQL.createDatabase();
         Bukkit.getPluginManager().registerEvents(new JoinListener(),this);
         setupPermissions();
+
+        // COMMANDS
+        this.getCommand("debug").setExecutor(new Debug());
     }
 
     private void setupPermissions() {
@@ -81,5 +85,6 @@ public class Main extends JavaPlugin {
     @Override
     public void onDisable() {
         MySQL.disconnect();
+        jda.shutdown();
     }
 }
