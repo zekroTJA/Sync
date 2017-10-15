@@ -1,0 +1,42 @@
+Discord:
+  token: BOTTOKEN
+  game: Minecraft
+
+MySQL:
+  host: localhost
+  port: 3306
+  user: root
+  database: minecraft
+  password: ''
+
+Roles:
+  admin: 359666366581571585
+  vip: 359666366581571585
+
+Channels:
+  staffchannel: 369041294414053377
+  reportchannel: 369041294414053377
+  minecraftchannel: 368319410697666564
+  whitelist:
+    - 368319410697666564
+    - 369041515923636236
+
+
+Messages:
+  gotrole: '&7[&aDiscordSync&7]&a You got the &e%role% &arank because you have it on our Discord'
+  notfound: ":warning: This user don't exists"
+  info: 'Minecraft name: `%user%`'
+  alreadylinked: ':warning: You have already linked your account use `+minecraft unlink`to unlink'
+  fetching: 'Fetching UUID'
+  cantfind: 'Unable to find user %user%'
+  success: ':white_check_mark: Successfully linked Discord account with Minecraft username `%user%`'
+  usage: 'Usage: `+minecarft link <username>`'
+  notlinked: ':warning: You have not linked your minecraft account'
+  unlinked: ':white_check_mark: Successfully unlinked account'
+  help: '```+minecraft info [@user] %nl +minecraft unlink %nl +minecraft link <username>```'
+  notregistred: ' You are not registred'
+  accountlinked: 'The account %user% is already linked'
+  reporthelp: '&7[&4Report&7]&c Usage: /report <player> <reason>'
+  reportplayernotfound: '&7[&4Report&7]&c This player is not online'
+  cantreportself: "&7[&4Report&7]&cYour can't report yourselve"
+  reported: '&7[&4Report&7]&a You reported &e%player% &afor &e%reason%'
